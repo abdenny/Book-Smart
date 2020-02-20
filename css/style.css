@@ -25,15 +25,16 @@ ul {
   list-style: none;
   display: flex;
 }
-h1 {
+.navbar-title {
   color: #e74c3c;
   margin-bottom: 0.5rem;
+  text-decoration: none;
+  font-size: 32px;
 }
 .navbar-button {
   margin-right: 1rem;
-  /* border: 2px solid #e74c3c;
-  border-radius: 5px;
-  padding: 5px; */
+  text-decoration: none;
+  color: black;
 }
 .search-bar-container {
   display: flex;
