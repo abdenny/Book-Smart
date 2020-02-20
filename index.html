@@ -8,21 +8,40 @@
     <title>Document</title>
   </head>
   <body>
-    <main>
-      <nav>
+    
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed top">
+        <div class="container">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#nvbCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="#" class="navbar-brand">Book Smart</a>
+            <div class="collapse navbar-collapse" id="nvbCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="#" class="nav-link">PlaceHolder</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">PlaceHolder</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+      <!-- <nav>
         <h1>Book Smart</h1>
         <ul>
           <li class="navbar-button">Placeholder</li>
           <li class="navbar-button">About us</li>
           <li class="navbar-button">Placeholder</li>
         </ul>
-      </nav>
+      </nav> -->
       <div class="search-bar-container">
           <input type="text" class="search-input"></input>
           <button type="button" class="submit-button">SEARCH</button>
       </div>
       <div class="cards-container"></div>
-    </main>
+    
     <script src="js/keys.js"></script>
     <script src="js/script.js"></script>
   </body>

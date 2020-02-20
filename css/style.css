@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
 
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -31,6 +31,50 @@ h1 {
 }
 .navbar-button {
   margin-right: 1rem;
+} */
+
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+/* =========== General Styling ================ */
+h3{
+  font-size: 18px;
+  font-weight: 400px;
+}
+p{
+  font-size: 14px;
+}
+
+/* =========== Home Section ================ */
+.navbar {
+  border-bottom:rgb(199, 138, 24)  5px solid ;
+}
+
+/* .navbar-brand {
+  color: #1886C7 !important;
+  font-size: 24px;
+} */
+
+ /* OR */
+
+.navbar .navbar-brand{
+  /* color: #1886C7; */
+  color: rgb(214, 109, 23);
+  font-size: 24px;
+}
+
+.bg-dark {
+  background-color: rgb(224, 197, 197) !important;
+}
+.nav-link {
+  color: white !important;
+  text-transform: uppercase;
+  transition: color 1s ease;
+}
+.nav-link:hover {
+  /* color: #1886C7 !important; */
+  color: rgb(214, 109, 23) !important;
 }
 .search-bar-container {
   display: flex;
