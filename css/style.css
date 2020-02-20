@@ -25,25 +25,24 @@ ul {
   list-style: none;
   display: flex;
 }
-
-li {
-  margin-right: 1rem;
-}
 h1 {
   color: #e74c3c;
   margin-bottom: 0.5rem;
 }
-.search-bar-container{
+.navbar-button {
+  margin-right: 1rem;
+}
+.search-bar-container {
   display: flex;
   justify-content: center;
   margin: 200px;
 }
-.search-input{
+.search-input {
   width: 600px;
   height: auto;
   font-size: 20px;
 }
-.submit-button{
+.submit-button {
 cursor: pointer;
 background-color: #3498db;
 border: 2px solid #3498db;
