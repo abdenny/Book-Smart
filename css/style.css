@@ -31,6 +31,9 @@ h1 {
 }
 .navbar-button {
   margin-right: 1rem;
+  /* border: 2px solid #e74c3c;
+  border-radius: 5px;
+  padding: 5px; */
 }
 .search-bar-container {
   display: flex;
@@ -41,6 +44,8 @@ h1 {
   width: 600px;
   height: auto;
   font-size: 20px;
+  border: 1px solid gray;
+  padding: 5px;
 }
 .submit-button {
 cursor: pointer;
