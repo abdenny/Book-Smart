@@ -1,13 +1,25 @@
-///////Google book intial query
-let googleBookUrl = 'https://www.googleapis.com/books/v1/volumes?q=';
-let userInput = 'mistborn';
+let button = document.querySelector('#button1');
+let object = [];
+
+button.addEventListener('click',e => {
+  e.preventDefault();
+  let input = document.querySelector('#input').value;
+  let userInput = input;
+  let googleBookUrl = 'https://www.googleapis.com/books/v1/volumes?q=';
+
 fetch(googleBookUrl + `${userInput}` + googleBookKey)
   .then(response => {
     return response.json();
   })
-  .then(json => {
-    console.log(json);
+  .then(title => {
+    console.log(title);
   });
+})
+
+
+
+
+
 
 //////NYTimes
 

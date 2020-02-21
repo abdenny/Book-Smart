@@ -1,48 +1,201 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
+    <title>BookSmart</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!--  Font Awesome CDN Link -->
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+
+         <!-- Roboto Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    
+
+                            <!-- NAVBAR -->
+
+
       <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed top">
-        <div class="container">
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#nvbCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a href="#" class="navbar-brand">Book Smart</a>
-            <div class="collapse navbar-collapse" id="nvbCollapse">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="#" class="nav-link">PlaceHolder</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">PlaceHolder</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-                </ul>
+          <div class="container">
+              <button class="navbar-toggler" data-toggle="collapse" data-target="#nvbCollapse">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <a href="#" class="navbar-brand">Book Smart</a>
+              <div class="collapse navbar-collapse" id="nvbCollapse">
+                  <ul class="navbar-nav ml-auto">
+                      <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+                      <li class="nav-item"><a href="" class="nav-link">Our Works</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+      
+
+
+
+
+                     <!-- Header Section -->
+
+
+
+    <header id="headerSection">
+        <div class="overlay">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col my-auto">
+                        
+                      <div class="input-group mb-3">
+                        <input id="input" type="text" class="form-control" placeholder="Find a Book...." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                          <button id="button1" class="btn btn-outline-secondary" type="button">Search</button>
+                        </div>
+                      </div>
+                        <button type="button" class="btn btn-outline-light btn-lg">See More...</button>
+                      
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
+    </header>
 
 
+                     <!-- Popular Section ---->
 
-      <!-- <nav>
-        <h1>Book Smart</h1>
-        <ul>
-          <li class="navbar-button">Placeholder</li>
-          <li class="navbar-button">About us</li>
-          <li class="navbar-button">Placeholder</li>
-        </ul>
-      </nav> -->
-      <div class="search-bar-container">
-          <input type="text" class="search-input"></input>
-          <button type="button" class="submit-button">SEARCH</button>
-      </div>
-      <div class="cards-container"></div>
+
+    <section id="popular">
+        <div class="popularTop">
+            <h2 class="sectionHeader"> Best Seller </h2>
+            
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="imageContainer">
+                        <img src="images/bg1.jpg" class="img-fluid">
+                        <div class="imageOverlay">
+                            <div class="ImageText">
+                                <i class="fa fa-search-plus" ></i>
+                                <h4>FIND MORE...</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="imageContainer">
+                        <img src="images/bg2.jpg" class="img-fluid">
+                        <div class="imageOverlay">
+                            <div class="ImageText">
+                                <i class="fa fa-search-plus" ></i>
+                                <h4>FIND MORE...</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="imageContainer">
+                        <img src="images/bg3.jpg" class="img-fluid">
+                        <div class="imageOverlay">
+                            <div class="ImageText">
+                                <i class="fa fa-search-plus" ></i>
+                                <h4>FIND MORE...</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="imageContainer">
+                        <img src="images/bg4.jpg" class="img-fluid">
+                        <div class="imageOverlay">
+                            <div class="ImageText">
+                                <i class="fa fa-search-plus" ></i>
+                                <h4>FIND MORE...</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="imageContainer">
+                        <img src="images/bg5.jpg" class="img-fluid">
+                        <div class="imageOverlay">
+                            <div class="ImageText">
+                                <i class="fa fa-search-plus" ></i>
+                                <h4>FIND MORE...</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="imageContainer">
+                        <img src="images/bg6.jpg" class="img-fluid">
+                        <div class="imageOverlay">
+                            <div class="ImageText">
+                                <i class="fa fa-search-plus" ></i>
+                                <h4>FIND MORE...</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="imageContainer">
+                        <img src="images/bg7.jpg" class="img-fluid">
+                        <div class="imageOverlay">
+                            <div class="ImageText">
+                                <i class="fa fa-search-plus" ></i>
+                                <h4>FIND MORE...</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="imageContainer">
+                        <img src="images/bg8.jpg" class="img-fluid">
+                        <div class="imageOverlay">
+                            <div class="ImageText">
+                                <i class="fa fa-search-plus" ></i>
+                                <h4>FIND MORE...</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+        
     
-    <script src="js/keys.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
+  
   </body>
 </html>
