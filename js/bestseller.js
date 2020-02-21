@@ -85,4 +85,8 @@ function drillDownNYTimes() {
   console.log(valuableBestSellers);
 }
 
+let cards = document.querySelectorAll('.text');
+
+console.log(cards);
+
 callNYTimes();
