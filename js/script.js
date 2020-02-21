@@ -5,7 +5,7 @@ let valObject = [];
 //////////Google
 //Functions
 function drillDownGoogle() {
-  for (let index = 0; index < 10; index++) {
+  for (let index = 0; index < 9; index++) {
     let tryObject = {};
     try {
       tryObject.Title = object[0].items[index].volumeInfo.title;
@@ -31,7 +31,7 @@ function drillDownGoogle() {
     try {
       tryObject.Image = object[0].items[index].volumeInfo.imageLinks.thumbnail;
     } catch {
-      tryObject.Image = 'images/placeholder.jpg';
+      tryObject.Image = 'images/placeholder.png';
     }
     valObject.push(tryObject);
     console.log(valObject);
@@ -54,6 +54,7 @@ function createBookCards(objToCreateFrom) {
 }
 //Event listeners
 searchButton.addEventListener('click', e => {
+  console.log('im here');
   e.preventDefault();
   let input = document.querySelector('#input').value;
   let userInput = input;
@@ -66,9 +67,12 @@ searchButton.addEventListener('click', e => {
       object.push(json);
     })
     .then(() => {
-      console.log(object);
       drillDownGoogle();
+    })
+    .then(() => {
       createBookCards(valObject);
+      object = [];
+      valObject = [];
     })
     .catch(() => {
       console.log('error');

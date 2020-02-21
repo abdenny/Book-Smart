@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 body {
-  background: #FDFDFD;
+  background: #fdfdfd;
   font-family: 'Nunito', sans-serif;
   font-size: 1rem;
 }
@@ -26,7 +26,7 @@ ul {
   display: flex;
 }
 h1 {
-  color: #E74C3C;
+  color: #e74c3c;
   margin-bottom: 0.5rem;
 }
 .navbar-title {
@@ -62,12 +62,12 @@ h1 {
   font-size: 16px;
   padding: 10px;
   width: 100px;
-  }
-  .search-button:hover {
-    background-color: #EE4608;
-    border-color: #EE4608;
-    border-width: 2px;
-  }
+}
+.search-button:hover {
+  background-color: #ee4608;
+  border-color: #ee4608;
+  border-width: 2px;
+}
 .cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
@@ -103,17 +103,17 @@ h1 {
 }
 .card--link {
   text-decoration: none;
-  background: #DB4938;
+  background: #db4938;
   color: #fff;
   padding: 0.3rem 1rem;
   border-radius: 20px;
   margin-bottom: 0.5rem;
 }
-.logo-container{
+.logo-container {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.logo{
+.logo {
   width: 400px;
 }
