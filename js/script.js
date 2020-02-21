@@ -1,40 +1,45 @@
-////////////Variables
+///////////Variables
 let searchButton = document.querySelector('.search-button');
-let object = [];
-let valObject = [];
+let initialGoogleObjects = [];
+let valuableGoogleObjects = [];
+
 //////////Google
 //Functions
 function drillDownGoogle() {
   for (let index = 0; index < 9; index++) {
     let tryObject = {};
     try {
-      tryObject.Title = object[0].items[index].volumeInfo.title;
+      tryObject.Title = initialGoogleObjects[0].items[index].volumeInfo.title;
     } catch {
       tryObject.Title = 'Title Unavaliable.';
     }
     try {
-      tryObject.Author = object[0].items[index].volumeInfo.authors[0];
+      tryObject.Author =
+        initialGoogleObjects[0].items[index].volumeInfo.authors[0];
     } catch {
       tryObject.Author = 'Author unknown.';
     }
     try {
-      tryObject.Published = object[0].items[index].volumeInfo.publishedDate;
+      tryObject.Published =
+        initialGoogleObjects[0].items[index].volumeInfo.publishedDate;
     } catch {
       tryObject.Published = 'Publishing information unavaliable.';
     }
     try {
       tryObject.ISBN_10 =
-        object[0].items[index].volumeInfo.industryIdentifiers[0].identifier;
+        initialGoogleObjects[0].items[
+          index
+        ].volumeInfo.industryIdentifiers[0].identifier;
     } catch {
       tryObject.ISBN_10 = 'ISBN unavaliable.';
     }
     try {
-      tryObject.Image = object[0].items[index].volumeInfo.imageLinks.thumbnail;
+      tryObject.Image =
+        initialGoogleObjects[0].items[index].volumeInfo.imageLinks.thumbnail;
     } catch {
       tryObject.Image = 'images/placeholder.png';
     }
-    valObject.push(tryObject);
-    console.log(valObject);
+    valuableGoogleObjects.push(tryObject);
   }
 }
 function createBookCards(objToCreateFrom) {
@@ -52,9 +57,9 @@ function createBookCards(objToCreateFrom) {
   );
   container.innerHTML = output;
 }
+
 //Event listeners
 searchButton.addEventListener('click', e => {
-  console.log('im here');
   e.preventDefault();
   let input = document.querySelector('#input').value;
   let userInput = input;
@@ -64,15 +69,17 @@ searchButton.addEventListener('click', e => {
       return response.json();
     })
     .then(json => {
-      object.push(json);
+      initialGoogleObjects.push(json);
     })
     .then(() => {
       drillDownGoogle();
     })
     .then(() => {
-      createBookCards(valObject);
-      object = [];
-      valObject = [];
+      createBookCards(valuableGoogleObjects);
+    })
+    .then(() => {
+      initialGoogleObjects = [];
+      valuableGoogleObjects = [];
     })
     .catch(() => {
       console.log('error');
