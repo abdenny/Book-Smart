@@ -30,6 +30,7 @@
 //////////////////
 let initialBestSellers = [];
 let valuableBestSellers = [];
+let covers = [];
 
 //functions
 function callNYTimes() {
@@ -46,6 +47,25 @@ function callNYTimes() {
     })
     .then(() => {
       drillDownNYTimes();
+    })
+    .then(() => {
+      for (let index = 0; index < 15; index++) {
+        let card = document.getElementById(`${index}`);
+        let image = 'http://placecorgi.com/250';
+        card.innerHTML = `
+
+        <img id="image${index}" src=${image} /><br>
+        ${valuableBestSellers[index].Rank}<br>
+        ${valuableBestSellers[index].Title}<br>
+        ${initialBestSellers[0].results[index].book_details[0].author}<br>
+        Weeks as a Best Seller: ${initialBestSellers[0].results[index].weeks_on_list}<br>
+        ISBN 10: 
+        <p id="isbn${index}">${valuableBestSellers[index].ISBN10}</p>
+        `;
+      }
+    })
+    .then(() => {
+      pullCoversandReplaceFromOpenLibrary();
     });
 }
 
@@ -82,11 +102,15 @@ function drillDownNYTimes() {
     }
     valuableBestSellers.push(tryObject);
   }
-  console.log(valuableBestSellers);
 }
 
-let cards = document.querySelectorAll('.text');
-
-console.log(cards);
+function pullCoversandReplaceFromOpenLibrary() {
+  let openLibraryUrl = 'http://covers.openlibrary.org/b/isbn/';
+  for (let index = 0; index < 15; index++) {
+    let isbn = document.querySelector(`#isbn${index}`).innerHTML;
+    let image = document.querySelector(`#image${index}`);
+    image.src = openLibraryUrl + `${isbn}-M.jpg`;
+  }
+}
 
 callNYTimes();

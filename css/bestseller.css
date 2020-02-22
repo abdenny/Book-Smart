@@ -9,40 +9,40 @@
 }
 
 body {
-    background: #fdfdfd;
-    font-family: 'Nunito', sans-serif;
-    font-size: 1rem;
-  }
-  main {
-    max-width: 900px;
-    margin: auto;
-    padding: 0.5rem;
-    text-align: center;
-  }/* NAV BAR
+  background: #fdfdfd;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+}
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 0.5rem;
+  text-align: center;
+} /* NAV BAR
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.navbar-button-container{
-    list-style: none;
-    display: flex;
+.navbar-button-container {
+  list-style: none;
+  display: flex;
 }
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .navbar-title {
-    color: #e74c3c;
-    margin-bottom: 0.5rem;
-    text-decoration: none;
-    font-size: 32px;
-  }
-  .navbar-button {
-    margin-right: 1rem;
-    text-decoration: none;
-    color: black;
-  }/* INTRO SECTION
+  color: #e74c3c;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  font-size: 32px;
+}
+.navbar-button {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: black;
+} /* INTRO SECTION
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.intro { 
+.intro {
   padding: 10px 0;
 }
 
@@ -54,10 +54,9 @@ nav {
 }
 
 h1 {
-  font-size:5rem;
+  font-size: 5rem;
   color: #3498db;
 }
-
 
 /* TIMELINE
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -94,7 +93,7 @@ h1 {
   bottom: 0;
   width: 400px;
   padding: 15px;
-  background: #EE4608;
+  background: #ee4608;
 }
 
 .timeline ul li div::before {
@@ -108,26 +107,26 @@ h1 {
 
 .timeline ul li:nth-child(odd) div {
   left: 45px;
-  border: #EE4608 solid 2px transparent;
+  border: #ee4608 solid 2px transparent;
   border-radius: 15px;
 }
 
 .timeline ul li:nth-child(odd) div::before {
   left: -15px;
   border-width: 8px 20px 8px 0;
-  border-color: transparent #EE4608 transparent transparent;
+  border-color: transparent #ee4608 transparent transparent;
 }
 
 .timeline ul li:nth-child(even) div {
   left: -439px;
-  border: #EE4608 solid 2px transparent;
+  border: #ee4608 solid 2px transparent;
   border-radius: 15px;
 }
 
 .timeline ul li:nth-child(even) div::before {
   right: -15px;
   border-width: 8px 0 8px 20px;
-  border-color: transparent transparent transparent #EE4608;
+  border-color: transparent transparent transparent #ee4608;
 }
 
 time {
@@ -140,26 +139,25 @@ time {
 }
 
 .text {
-    color: white;
-    height: auto;
+  color: white;
+  height: auto;
 }
-
 
 /* EFFECTS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .timeline ul li::after {
-  transition: background .5s ease-in-out;
+  transition: background 0.5s ease-in-out;
 }
 
 .timeline ul li.in-view::after {
-  background: #EE4608;
+  background: #ee4608;
 }
 
 .timeline ul li div {
   visibility: hidden;
   opacity: 0;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .timeline ul li:nth-child(odd) div {
@@ -176,7 +174,6 @@ time {
   opacity: 1;
   height: auto;
 }
-
 
 /* GENERAL MEDIA QUERIES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -204,15 +201,15 @@ time {
   .timeline ul li:nth-child(even) div::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
-    border-color: transparent #EE4608 transparent transparent;
+    border-color: transparent #ee4608 transparent transparent;
   }
 }
 
 .logo-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  .logo {
-    width: 400px;
-  }
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.logo {
+  width: 400px;
+}
