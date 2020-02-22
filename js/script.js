@@ -43,8 +43,6 @@ function drillDownGoogle() {
   }
 }
 function createBookCards(objToCreateFrom) {
-  console.log(initialGoogleObjects);
-  console.log(valuableGoogleObjects);
   let container = document.querySelector('.cards-container');
   let output = '';
   objToCreateFrom.forEach(

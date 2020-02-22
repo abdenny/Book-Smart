@@ -65,7 +65,7 @@ function callNYTimes() {
       }
     })
     .then(() => {
-      pullCoversandReplaceFromGoogle();
+      pullCoversandReplaceFromOpenLibrary();
     });
 }
 
@@ -84,7 +84,7 @@ function drillDownNYTimes() {
       tryObject.WeeksOnList = 'Ammount of time on the list is unknown.';
     }
     try {
-      tryObject.ISBN10 = initialBestSellers[0].results[index].isbns[1].isbn10;
+      tryObject.ISBN10 = initialBestSellers[0].results[index].isbns[0].isbn10;
     } catch {
       tryObject.ISBN10 = 'ISBN information unavaliable.';
     }
@@ -102,46 +102,15 @@ function drillDownNYTimes() {
     }
     valuableBestSellers.push(tryObject);
   }
-  console.log(valuableBestSellers);
 }
 
-function pullCoversandReplaceFromGoogle() {
-  let googleBookUrl = 'https://www.googleapis.com/books/v1/volumes?q=isbn:';
+function pullCoversandReplaceFromOpenLibrary() {
+  let openLibraryUrl = 'http://covers.openlibrary.org/b/isbn/';
   for (let index = 0; index < 15; index++) {
     let isbn = document.querySelector(`#isbn${index}`).innerHTML;
-    let imageURL = document.querySelector(`#image${index}`).src;
-    console.log(googleBookUrl + isbn + googleBookKey);
-    // fetch(googleBookUrl + isbn + googleBookKey)
-    //   .then(response => {
-    //     return response.json();
-    //   })
-    //   .then(json => {
-    //     console.log(googleBookUrl + isbn + googleBookKey);
-    //   })
-    //   .catch(() => {
-    //     console.log('error');
-    //   });
+    let image = document.querySelector(`#image${index}`);
+    image.src = openLibraryUrl + `${isbn}-M.jpg`;
   }
 }
 
-// function updateCover(id, isbn) {
-//   fetch(
-//     'https://www.googleapis.com/books/v1/volumes?q=isbn:' +
-//       isbn +
-//       '&key=' +
-//       googleBookKey,
-//     { method: 'get' }
-//   )
-//     .then(response => {
-//       return response.json();
-//     })
-//     .then(data => {
-//       var img = data.items[0].volumeInfo.imageLinks.thumbnail;
-//       img = img.replace(/^http:\/\//i, 'https://');
-//       $('#cover-' + id).attr('src', img);
-//     })
-//     .catch(error => {
-//       console.log(error);
-//     });
-// }
 callNYTimes();
