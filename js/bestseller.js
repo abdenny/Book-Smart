@@ -30,6 +30,7 @@
 //////////////////
 let initialBestSellers = [];
 let valuableBestSellers = [];
+let covers = [];
 
 //functions
 function callNYTimes() {
@@ -46,6 +47,25 @@ function callNYTimes() {
     })
     .then(() => {
       drillDownNYTimes();
+    })
+    .then(() => {
+      for (let index = 0; index < 15; index++) {
+        let card = document.getElementById(`${index}`);
+        let image = 'http://placecorgi.com/250';
+        card.innerHTML = `
+
+        <img id="image${index}" src=${image} /><br>
+        ${valuableBestSellers[index].Rank}<br>
+        ${valuableBestSellers[index].Title}<br>
+        ${initialBestSellers[0].results[index].book_details[0].author}<br>
+        Weeks as a Best Seller: ${initialBestSellers[0].results[index].weeks_on_list}<br>
+        ISBN 10: 
+        <p id="isbn${index}">${valuableBestSellers[index].ISBN10}</p>
+        `;
+      }
+    })
+    .then(() => {
+      pullCoversandReplaceFromGoogle();
     });
 }
 
@@ -64,7 +84,7 @@ function drillDownNYTimes() {
       tryObject.WeeksOnList = 'Ammount of time on the list is unknown.';
     }
     try {
-      tryObject.ISBN10 = initialBestSellers[0].results[index].isbns[0].isbn10;
+      tryObject.ISBN10 = initialBestSellers[0].results[index].isbns[1].isbn10;
     } catch {
       tryObject.ISBN10 = 'ISBN information unavaliable.';
     }
@@ -85,8 +105,43 @@ function drillDownNYTimes() {
   console.log(valuableBestSellers);
 }
 
-let cards = document.querySelectorAll('.text');
+function pullCoversandReplaceFromGoogle() {
+  let googleBookUrl = 'https://www.googleapis.com/books/v1/volumes?q=isbn:';
+  for (let index = 0; index < 15; index++) {
+    let isbn = document.querySelector(`#isbn${index}`).innerHTML;
+    let imageURL = document.querySelector(`#image${index}`).src;
+    console.log(googleBookUrl + isbn + googleBookKey);
+    // fetch(googleBookUrl + isbn + googleBookKey)
+    //   .then(response => {
+    //     return response.json();
+    //   })
+    //   .then(json => {
+    //     console.log(googleBookUrl + isbn + googleBookKey);
+    //   })
+    //   .catch(() => {
+    //     console.log('error');
+    //   });
+  }
+}
 
-console.log(cards);
-
+// function updateCover(id, isbn) {
+//   fetch(
+//     'https://www.googleapis.com/books/v1/volumes?q=isbn:' +
+//       isbn +
+//       '&key=' +
+//       googleBookKey,
+//     { method: 'get' }
+//   )
+//     .then(response => {
+//       return response.json();
+//     })
+//     .then(data => {
+//       var img = data.items[0].volumeInfo.imageLinks.thumbnail;
+//       img = img.replace(/^http:\/\//i, 'https://');
+//       $('#cover-' + id).attr('src', img);
+//     })
+//     .catch(error => {
+//       console.log(error);
+//     });
+// }
 callNYTimes();
