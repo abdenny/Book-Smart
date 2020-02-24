@@ -117,3 +117,7 @@ h1 {
 .logo {
   width: 400px;
 }
+.sublogo{
+  text-decoration: underline;
+  color: rgb(55, 53, 53);
+}
