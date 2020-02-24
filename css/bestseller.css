@@ -16,7 +16,8 @@ body {
 main {
   max-width: 900px;
   margin: auto;
-  padding: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
   text-align: center;
 } /* NAV BAR
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -43,7 +44,7 @@ nav {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .intro {
-  padding: 10px 0;
+  padding-bottom: 10px 0;
 }
 
 .container {
@@ -57,6 +58,8 @@ h1 {
   font-size: 5rem;
   color: #3498db;
   text-decoration: underline;
+  padding: 20px;
+  cursor: default;
 }
 
 /* TIMELINE
@@ -141,7 +144,9 @@ time {
 
 .text {
   color: white;
+  font-size: 15px;
   height: auto;
+  cursor: default;
 }
 
 /* EFFECTS
@@ -212,14 +217,19 @@ time {
   flex-direction: column;
 }
 .logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   width: 400px;
 }
 .hidden{
   font-size: 1px;
   color: #ee4608;
+  cursor: default;
 }
 
 .sublogo{
   text-decoration: underline;
   color: rgb(55, 53, 53);
+  cursor: default;
 }
