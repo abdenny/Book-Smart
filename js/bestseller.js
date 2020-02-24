@@ -59,7 +59,6 @@ function callNYTimes() {
         ${valuableBestSellers[index].Title}<br>
         ${initialBestSellers[0].results[index].book_details[0].author}<br>
         Weeks as a Best Seller: ${initialBestSellers[0].results[index].weeks_on_list}<br>
-        ISBN 10: 
         <p id="isbn${index}">${valuableBestSellers[index].ISBN10}</p>
         `;
       }
