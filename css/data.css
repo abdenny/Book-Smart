@@ -223,3 +223,29 @@ time {
   text-decoration: underline;
   color: rgb(55, 53, 53);
 }
+
+.container-info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.infobox{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 400px;
+    width: 900px;
+    margin: 45px;
+    background-color: #3498db;
+    border: black solid 1px transparent;
+    border-radius: 20px;
+}
+
+.dataimg{
+    display: flex;
+    align-items: left;
+    margin: 10px;
+    height: auto;
+    width: auto;
+}
