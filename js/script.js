@@ -1,5 +1,6 @@
 ///////////Variables
 let searchButton = document.querySelector('.search-button');
+let cardsContainer = document.querySelector('.cards-container');
 let initialGoogleObjects = [];
 let valuableGoogleObjects = [];
 
@@ -84,4 +85,11 @@ searchButton.addEventListener('click', e => {
     .catch(() => {
       console.log('error');
     });
+});
+
+cardsContainer.addEventListener('click', e => {
+  let cardButton = document.querySelector('.card--link');
+  if (event.target == cardButton) {
+    console.log('hit');
+  }
 });
