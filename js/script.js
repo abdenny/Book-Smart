@@ -51,7 +51,7 @@ function createBookCards(objToCreateFrom) {
               <div class="card">
                 <img class="card--avatar" src=${Image} />
                 <h1 class="card--title">${Title}</h1>
-                <a class="card--link" href="#">Timesify</a>
+                <a class="card--link" href="data.html">Timesify</a>
               </div>
               `)
   );
