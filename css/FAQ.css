@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background: #fdfdfd;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+  }
+  main {
+    max-width: 900px;
+    margin: auto;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  h1 {
+    font-size: 5rem;
+    color: #3498db;
+    text-decoration: underline;
+    padding: 20px;
+    cursor: default;
+  }
+  .listFAQ{
+    display: flex;
+    flex-direction: column;
+    border-bottom: black solid 1px;
+  }
+  h2{
+    color: #e74c3c;
+    padding: 10px;
+    cursor: default;
+  }
+  .answer{
+    color: #3498db;
+      padding: 10px;
+      text-decoration: none;
+      cursor: default;
+  }
+  .API-links{
+    color: #3498db;
+  }
+  .bg-lightgray{
+      background-color: rgb(232, 232, 232);
+      padding: 25px;
+      border-top: black solid .5px;
+      
+  }
+  .bg-white{
+      background-color: #fdfdfd;
+      padding: 25px;
+      border-top: black solid .5px;
+  }
+.navbar-title {
+    color: #e74c3c;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    font-size: 32px;
+  }
+  .navbar-button-container {
+    list-style: none;
+    display: flex;
+  }
+  .navbar-button {
+    margin-right: 1rem;
+    text-decoration: none;
+    color: black;
+  }
+  .logo-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 400px;
+
+  }
+  .sublogo{
+    color: rgb(55, 53, 53);
+    cursor: default;
+  }
