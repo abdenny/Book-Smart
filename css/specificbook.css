@@ -231,3 +231,32 @@ time {
   color: rgb(55, 53, 53);
   cursor: default;
 }
+
+.search-bar-container {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+.search-input {
+  width: 600px;
+  height: auto;
+  font-size: 20px;
+  border: 1px solid lightgray;
+  padding: 5px;
+}
+.search-button {
+  cursor: pointer;
+  background-color: #3498db;
+  border: 2px solid #3498db;
+  border-radius: 3px;
+  color: white;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 100px;
+}
+.search-button:hover {
+  background-color: #ee4608;
+  border-color: #ee4608;
+  border-width: 2px;
+}
