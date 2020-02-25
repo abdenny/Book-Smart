@@ -91,7 +91,8 @@ function populateModal(populatingItem) {
       <div>Description: ${populatingItem.Description ||
         'Description not avaliable.'}</div><br>
       <div>By: ${populatingItem.Author || 'Author not avaliable.'}</div><br>
-      <div>${populatingItem.Pages || 'Page count unknown.'}</div><br> 
+      <div>Page count: ${populatingItem.Pages ||
+        'Page count unknown.'}</div><br> 
       <div>Published on: ${populatingItem.Published ||
         'Publishing date unknown.'}</div><br>
       <div>ISBN: ${populatingItem.ISBN_10 || 'ISBN unknown.'}
