@@ -66,7 +66,7 @@
   }
 .navbar-title {
     color: #e74c3c;
-    margin-bottom: 0.5rem;
+    margin-left: 10px;
     text-decoration: none;
     font-size: 32px;
   }
@@ -94,4 +94,30 @@
   .sublogo{
     color: rgb(55, 53, 53);
     cursor: default;
+  }
+
+
+  .switch {
+    align-self: center;
+    font-size: 10px;
+    margin-right: 10px;
+    cursor: default;
+  }
+  .inner-switch {
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #555;
+    border-radius: 1.25rem;
+    width: 26px;
+    height: 20px;
+    text-align: center;
+    font-size: 10px;
+    padding: 2px;
+  }
+  
+  .dark,
+  .dark * {
+      background-color: rgba(74, 74, 74);
+      color: #e6e6e6;
+      border-color: #ee4608;
   }
