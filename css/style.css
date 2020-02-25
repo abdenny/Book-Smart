@@ -127,8 +127,7 @@ h1 {
   width: 400px;
 }
 
-.sublogo{
-
+.sublogo {
   color: rgb(55, 53, 53);
   cursor: default;
 }
@@ -145,6 +144,7 @@ h1 {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
+  overflow: auto;
 }
 
 .modal-window:target {
