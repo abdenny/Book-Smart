@@ -97,7 +97,7 @@ function populateModal(populatingItem) {
         'Publishing date unknown.'}</div><br>
       <div>ISBN: ${populatingItem.ISBN_10 || 'ISBN unknown.'}
     </div>
-  </div>;`;
+  </div>`;
   cardsContainer.insertAdjacentHTML('afterend', modalContent);
 }
 
