@@ -16,7 +16,8 @@ body {
 main {
   max-width: 900px;
   margin: auto;
-  padding: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
   text-align: center;
 } /* NAV BAR
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -43,7 +44,7 @@ nav {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .intro {
-  padding: 10px 0;
+  padding-bottom: 10px 0;
 }
 
 .container {
@@ -57,6 +58,7 @@ h1 {
   font-size: 5rem;
   color: #3498db;
   text-decoration: underline;
+  cursor: default;
 }
 
 /* TIMELINE
@@ -212,16 +214,20 @@ time {
   flex-direction: column;
 }
 .logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   width: 400px;
 }
 .hidden{
   font-size: 1px;
   color: #ee4608;
+  cursor: default;
 }
 
 .sublogo{
-  text-decoration: underline;
   color: rgb(55, 53, 53);
+  cursor: default;
 }
 
 .container-info{
@@ -245,7 +251,26 @@ time {
 .dataimg{
     display: flex;
     align-items: left;
+    flex-direction: column;
     margin: 10px;
-    height: auto;
+    height: 360px;
+}
+
+.container-info-text{
+    display: flex;
+    align-items: right;
+    flex-direction: row;
     width: auto;
+    color: white;
+    font-size: 15px;
+    text-align: left;
+    cursor: default;
+}
+
+.info-text{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 500px;
+    height: 380px;
 }
