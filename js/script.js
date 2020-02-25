@@ -52,11 +52,25 @@ function createBookCards(objToCreateFrom) {
               <div class="card">
                 <img class="card--avatar" src=${Image} />
                 <h1 class="card--title">${Title}</h1>
-                <a class="card--link" href="data.html">Timesify</a>
+                <a class="card--link" href="#open-modal">Timesify</a>
               </div>
               `)
   );
   container.innerHTML = output;
+}
+
+function populateModal() {
+  modalContent = `
+  <div id='open-modal' class='modal-window'>
+    <div>
+      <a href='#modal-close' title='Close' class='modal-close'>
+        close &times;
+      </a>
+      <h1>CSS Modal</h1>
+      <div>The quick brown fox jumped over the lazy dog.</div>
+    </div>
+  </div>;`;
+  cardsContainer.insertAdjacentHTML('afterend', modalContent);
 }
 
 //Event listeners
@@ -90,6 +104,6 @@ searchButton.addEventListener('click', e => {
 cardsContainer.addEventListener('click', e => {
   let cardButton = document.querySelector('.card--link');
   if (event.target == cardButton) {
-    console.log('hit');
+    populateModal();
   }
 });
