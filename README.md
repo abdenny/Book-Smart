@@ -20,9 +20,9 @@
 <b>Contributions:</b> Main focus was HTML, CSS, JavaScript and jQuery for myPlaces and Search pages. Focused our Flickr API search after running into roadblocks. Deployed responsive design while collaborating with team as well as consistent design throughout all pages, navigation, and footers.
 
 <h3>Jaye Jensen: https://github.com/jaye-j</h3>
-<b>Primary team role:</b> Front-end markup and styling, prototype/concepting, Graphic Designer
+<b>Primary team role:</b> Front-end formatting and styling, Graphic Designer, Scrum/Agile, prototype/concepting,
 </br>
-<b>Contributions:</b> HTML, CSS & JavaScript for home and about pages, concepting/prototyping of product idea. Guided overall design and usability. Tested responsive design and implemented changes with team as needed. Ensured consistent design throughout website.
+<b>Contributions:</b> HTML and CSS for all pages. Implemented JavaScript neccasary for animations on the home, current bestsellers, and find bestsellers pages. Designed logos, the color scheme, and ensured consistent design throughout the website. Executed our stretch goals of having an 'About us' and 'FAQ' page.
 
 </br>
 </br>
@@ -46,9 +46,9 @@
 
 <h3>APIs</h3>
 <ul>
-    <li><em>The New York Times</em> Best Sellers API</li>
-    <li>Google Books API</li>
-    <li>Open Library Books API</li>
+    <li>[<em>The New York Times</em> Best Sellers API](https://developer.nytimes.com/docs/books-product/1/overview)</li>
+    <li>[Google Books API](https://developers.google.com/books)</li>
+    <li>[Open Library Books API](https://openlibrary.org/dev/docs/api/books)</li>
 </ul
 
 <h3>Other:</h3>
