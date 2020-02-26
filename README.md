@@ -3,7 +3,7 @@
 <img src="images/booklogoorange.png">
 
 <h2><u>Overview:</u><h2>
-<h4>Book•Smart allows users to search for books and view both current and historical bestseller data from <em>The New York Times</em>.  This web application was designed for book lovers who want to find more information about specific titles, and their respective bestseller history (or lack thereof). Our final product allows the user to search for any book and returns an interactive gallery of titles with the ability to fetch more information about selected titles. Additional features include the ability to see current bestsellers from <em>The New York Times</em>, as well as viewing bestsellers on dates specified by the user. In the future, we would like to incorporate a backend server and database, which will allow the user to create a profile, login, and keep track of books they're interested in or have read. We would also like to implement other APIs which will allow the user to see reviews, and be recommended similar titles (i.e. Goodreads, etc.).</h4>
+<h4>Book•Smart allows users to search for books and view both current and historical bestseller data from <em>The New York Times</em>. Book•Smart was designed with functionality, responsiveness, and amsmooth user experience at the forefront. This web application is for book lovers who want to find more information about specific titles, and their respective bestseller history (or lack thereof). Our final product allows the user to search for any book and returns an interactive gallery of titles with the ability to fetch more information about selected titles. Additional features include the ability to see current bestsellers from <em>The New York Times</em>, as well as viewing bestsellers on dates specified by the user. In the future, we would like to incorporate a backend server and database, which will allow the user to create a profile, login, and keep track of books they're interested in or have read. We would also like to implement other APIs which will allow the user to see reviews, and be recommended similar titles (i.e. Goodreads, etc.).</h4>
 
 </br>
 
@@ -12,17 +12,17 @@
 <h3>Austin Denny: https://github.com/abdenny</h3>
 <b>Primary team role:</b> APIs, JavaScript writer, Scrum/Agile, prototype/concepting
 </br>
-<b>Contributions:</b> JavaScript for all pages. Implemented our stretch goal of allowing users to search for bestseller data on specific dates and displaying those on the specificbook page. Developed JavaScript functions to efficiently obtain information from three different APIs, which often involved passing information retrieved from one API to another.
-
-<h3>Meryem Komur: https://github.com/meryemkmr</h3>
-<b>Primary team role:</b> Front-end markup and styling, prototype/concepting
-</br>
-<b>Contributions:</b> Main focus was HTML, CSS, JavaScript and jQuery for myPlaces and Search pages. Focused our Flickr API search after running into roadblocks. Deployed responsive design while collaborating with team as well as consistent design throughout all pages, navigation, and footers.
+<b>Contributions:</b> JavaScript for all pages, which entailed designing and manipulating HTML & CSS as necessary. Implemented our stretch goal of allowing users to search for bestseller data on specific dates and displaying those on the specificbook page. Developed JavaScript functions to efficiently obtain information from three different APIs, which involved passing information retrieved from one API to another.
 
 <h3>Jaye Jensen: https://github.com/jaye-j</h3>
 <b>Primary team role:</b> Front-end markup and styling, prototype/concepting, Graphic Designer
 </br>
-<b>Contributions:</b> HTML, CSS & JavaScript for home and about pages, concepting/prototyping of product idea. Guided overall design and usability. Tested responsive design and implemented changes with team as needed. Ensured consistent design throughout website.
+<b>Contributions:</b>  HTML and CSS for all pages. Implemented JavaScript necessary for animations on the home, current bestsellers, and find bestsellers pages. Designed logos, the color scheme, and ensured consistent design throughout the website. Executed our stretch goals of having an 'About us' and 'FAQ' page.
+
+<h3>Meryem Komur: https://github.com/meryemkmr</h3>
+<b>Primary team role:</b> Front-end markup and styling, prototype/concepting
+</br>
+<b>Contributions:</b> Main focus was HTML, CSS, and Design. Designed a more traditional desktop version that implements jQuery and Bootstrap4. Deployed responsive design while collaborating with team as well as consistent design throughout all desktop pages, navigation, and footers.
 
 </br>
 </br>
@@ -33,16 +33,6 @@
     <li>CSS3</li>
     <li>JavaScript ES6</li>
 </ul>
-
-<!-- <h3>Libraries:</h3>
-<ul>
-    <li>jQuery</li>
-</ul
-
-<h3>Frameworks:</h3>
-<ul>
-    <li>Bootstrap</li>
-</ul -->
 
 <h3>APIs</h3>
 <ul>
@@ -55,6 +45,7 @@
 <ul>
     <li>AJAX</li>
     <li>JSON</li>
+    <li>Photoshop</li>
 </ul>
 
 </br>
@@ -71,15 +62,15 @@
 
 <h2><u>Stretch Goals Completed</u></h2>
 <ul>
-    <li>Using AJAX / localstorage to save myPlaces</li>
-    <li>Map with functionality: info window pop up, locating where picture was taken, marking location on map, displaying multiple markers at a time, adjusting map depending where user was searching</li>
-    <li>Implementing Google Autocomplete</li>
-    <li>Hiding and showing of map</li>
+    <li>Implementing a third API to dynamically add covers</li>
+    <li>Adding Aboutus and FAQ pages</li>
+    <li>Implementing the ability to search for bestseller data on specific dates</li>
 </ul>
 
 <h2><u>Stretch Goals Future</u></h2>
 <ul>
-<li>Creating PostgreSQL database requiring user login to enable myPlaces to be available from different devices</li>
+<li>Creating a PostgreSQL database allowing users to create a profile, login, and keep track of books. Implement other APIs show reviews and recommended similar titles.</li>
+<li>Implementing the traditonal desktop design and the ability to toggle between views.</li>
 </ul>
 
 </br>
@@ -87,210 +78,165 @@
 <h2><u>Challenges & Solutions:</u><h2>
 <h3>Some of the biggest challenges we faced with this project build included:</h2>
 
-<b>Challenge:</b> Finding quality APIs that returned necessary data. Used 3-4 before we settled on the final ones.
+<b>Challenge:</b> Inconsistent formatting in APIs. Often paths would change arbitrarily, making it difficult to programmatically drill down required data.
 </br>
-<b>Solution:</b> Learned much more about APIs. What to look for, how to search, how to retrieve the data we wanted.
+<b>Solution:</b> Learned much more about our specific APIs through trial and error. Implemented try/catches for when data fetches may fail.
 
-<b>Challenge:</b> Understanding Google Maps API, using their language.
+<b>Challenge:</b> JavaScript often executed asynchronusly.
 </br>
-<b>Solution:</b> Read user documentation.
+<b>Solution:</b> Solving this issue require apporpiately using promises in conjuction with fetches.
 
-<b>Challenge:</b> Photo tags, getting good photos from Flickr API
+<b>Challenge:</b> Making the site responsive for all device sizes.
 </br>
-<b>Solution:</b> Trial and error, reading up on user documentation, tutorials.
+<b>Solution:</b> After research, along with trial and error, we determined that CSS grid was the best/most responsive layout for our website.
 
 </br>
 
 <h2><u>Code Snippets:</u></h2>
 
-<h4>Showcases how we worked with Flickr's API and the specificity they require when working with their database.</h4>
+<h4>Showcases how we fetched when a title was searched from the Google Books API.</h4>
 
 ```javascript
-// Searches Flickr API for images based on latitude and longitude from Google Search, sends pictues to createPicture function
-function photoSearch(latLon) {
-  // gets radius, units and tags
-  var radius = getRadius();
-  var units = getUnits();
-  var tags = chooseTags();
-
-  //Creates error function w/message to be returned if no pictures found
-  var errorPics = errorMessage(
-    'No pictures were found for this location, radius, and tags, please try your search again.'
-  );
-
-  // Adds in tags. Tags are essential in the search process,as well as radius units. These aspects will be changed later to get respnoses from the user
-  var resp = $.get(
-    'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=' +
-      FLICKR_API_KEY +
-      '&lat=' +
-      latLon['lat'] +
-      '&lon=' +
-      latLon['lng'] +
-      '&tags=' +
-      tags +
-      '&tag_mode=any&radius=' +
-      radius +
-      '&radius_units=' +
-      units +
-      '&format=json&nojsoncallback=1'
-  );
-
-  resp.catch(errorPics).then(checkForPics);
-}
+//Event listener on the search button.
+searchButton.addEventListener('click', e => {
+  e.preventDefault();
+  valuableGoogleObjects2 = [];
+  let input = document.querySelector('#input').value;
+  let userInput = input;
+  let googleBookUrl = 'https://www.googleapis.com/books/v1/volumes?q=';
+  // Takes the user input and inserts into the URL of the API call.
+  fetch(googleBookUrl + `${userInput}` + googleBookKey)
+    .then(response => {
+      return response.json();
+    })
+    .then(json => {
+      initialGoogleObjects.push(json);
+    })
+    .then(() => {
+      // Takes the returned object from the API call and parses out desired information.
+      drillDownGoogle();
+    })
+    .then(() => {
+      // Creates and populates the cards saved from the desired data.
+      createBookCards(valuableGoogleObjects);
+    })
+    .then(() => {
+      // Clears local storage for repeating searches.
+      initialGoogleObjects = [];
+      valuableGoogleObjects = [];
+    })
+    .catch(() => {
+      console.log('error');
+    });
+});
 ```
 
 <br/>
 
-<h4>This snippet shows the simple, yet customizable, carousel featured on our home page.</h4>
+<h4>This snippet shows how we fetched <em>The New York Times</em> API, populated containers, and called a second API with the data returned from the first.</h4>
 
 ```javascript
-//Carousel control; rotates through jumbotron images
-function carouselControl() {
-  $(document).ready(function() {
-    $('.carousel').slick({
-      autoplay: true,
-      mobileFirst: true,
-      autoplaySpeed: 5000,
-      arrows: false,
-      pauseOnFocus: false,
-      pauseOnHover: false,
-      swipeToSlide: true
+function callNYTimes() {
+  //Fetches the current best sellers from <em>The New York Times</em> API
+  fetch(
+    'https://api.nytimes.com/svc/books/v3/lists.json?list-name=hardcover-fiction&api-key=' +
+      nyTimesKey,
+    { method: 'get' }
+  )
+    .then(response => {
+      return response.json();
+    })
+    .then(json => {
+      initialBestSellers.push(json);
+    })
+    .then(() => {
+      // Parses out desired information.
+      drillDownNYTimes();
+    })
+    .then(() => {
+      //Populated containers with the desired information.
+      for (let index = 0; index < 15; index++) {
+        let card = document.getElementById(`${index}`);
+        let image = 'http://placecorgi.com/250';
+        card.innerHTML = `
+
+        <img id="image${index}" src=${image} /><br>
+        ${valuableBestSellers[index].Rank}.<br>
+        ${valuableBestSellers[index].Title}<br>
+        ${initialBestSellers[0].results[index].book_details[0].author}<br>
+        Weeks as a Best Seller: ${initialBestSellers[0].results[index].weeks_on_list}<br>
+        <p class="hidden" id="isbn${index}">${valuableBestSellers[index].ISBN10}</p>
+        `;
+      }
+    })
+    .then(() => {
+      //Using the ISBN returned from the first API, queries a second API for cover images.
+      pullCoversandReplaceFromOpenLibrary();
     });
-  });
 }
 ```
 
 <br />
-<h4>This bit of code displays the use of jQuery's ease of animations to add hide and show features for our map and hamburger menu.</h4>
+<h4>This bit of code is very similar to the last, but shows how we adapted <em>The New York Times</em> call for dates specified by the user.</h4>
 
 ```javascript
-// ******************************
-// *******REACTIVE MENUS*********
-// ******************************
-function clickShowMap() {
-  $SHOW_MAP.click(function() {
-    $('[data-images-role="hide-map"]').show();
-    printIt($(this));
-    $(this).hide();
-    $('.click-to-close').hide();
-    $('.click-to-open').show();
-    $('.map-banner-container').slideDown(1000);
-  });
-}
+//Function takes the date input the user as an argument.
+function callNYTimes(dateToCheck) {
+  // The date passed in is used to fetch a specific bestsellers.
+  fetch(
+    `https://api.nytimes.com/svc/books/v3/lists/${dateToCheck}/hardcover-fiction.json?api-key=` +
+      nyTimesKey,
+    { method: 'get' }
+  )
+    .then(response => {
+      return response.json();
+    })
+    .then(json => {
+      initialBestSellers.push(json);
+    })
+    .then(() => {
+      drillDownNYTimes();
+    })
+    .then(() => {
+      for (let index = 0; index < 15; index++) {
+        let card = document.getElementById(`${index}`);
+        let image = 'http://placecorgi.com/250';
+        card.innerHTML = `
 
-function clickHideMap() {
-  $HIDE_MAP.click(function() {
-    $('[data-images-role="show-map"]').show();
-    $(this).hide();
-    $('.click-to-close').show();
-    $('.click-to-open').hide();
-    $('.map-banner-container').slideUp(1000);
-  });
-}
-
-// when hamburger menu icon is clicked, the hamburger icon hids, the exit icon shows and the menu-container shows slowly
-function clickMenuShow() {
-  $HAMBURGER.click(function() {
-    $EXIT_ICON.show();
-    $(this).hide();
-    $('.myAtlas-logo').hide('slow');
-    $MENU_CONTAINER.show('slow');
-  });
-}
-// when exit icon is clicked, the exit icon hids, the hamburger menu shows, and the menu-container hids slowly
-function clickExitButton() {
-  $EXIT_ICON.click(function() {
-    $HAMBURGER.show();
-    $(this).hide();
-    $('.myAtlas-logo').show('slow');
-    $MENU_CONTAINER.hide('slow');
-  });
-}
-```
-
-<br />
-<h4>Code snippit displays how listerners can be added to text inside a Google Maps marker. The code also detects whether or not the event has already been saved to myPlaces. The listener is not added if the event has been saved.</h4>
-
-```javascript
-google.maps.event.addListener(infoWindow, 'domready', function() {
-  if (document.querySelector('[data-role="save"]')) {
-    document
-      .querySelector('[data-role="save"]')
-      .addEventListener('click', function handler(e) {
-        e.preventDefault();
-        this.textContent = '\u2713Saved to myPlaces';
-        this.setAttribute('data-role', 'saved');
-        this.setAttribute('class', 'saved');
-        addPlace(formatted_address, picInfo, latLon);
-        e.currentTarget.removeEventListener('click', handler);
-      });
-  }
-});
-```
-
-</br>
-
-<h4>Demonstrates usage of localstorage and how a user's places on their myPlaces page are rendered.</h4>
-
-```javascript
-// Takes myPlaces from local storage and prints information to screen
-function displayMyPlaces(myPlaces) {
-  var $myPlacesContainer = $('<div></div>', {
-    class: 'places-container',
-    'data-role': 'places-container'
-  });
-
-  for (var key in myPlaces) {
-    var id = stringMaker(key);
-    var $place = $('<div></div>', {
-      class: 'place',
-      'data-role': 'place',
-      name: key,
-      id: id
+          <img id="image${index}" src=${image} /><br>
+          ${valuableBestSellers[index].Rank}.<br>
+          ${valuableBestSellers[index].Title}<br>
+          ${valuableBestSellers[index].Author}<br>
+          Weeks as a Best Seller: ${valuableBestSellers[index].WeeksOnList}<br>
+          <p class="hidden" id="isbn${index}">${valuableBestSellers[index].ISBN10}</p>
+          `;
+      }
+    })
+    .then(() => {
+      pullCoversandReplaceFromOpenLibrary();
     });
-    appendImages(myPlaces[key]['images'], $place);
-    var $address = $('<span></span>', {
-      text: key
-    });
-    $place.append($address);
-    var URI = encodeURI(key);
-    var link = 'https://maps.google.com?q=' + URI;
-    var $directions = $('<a></a>', {
-      target: '_blank',
-      rel: 'noopener noreferrer',
-      href: link,
-      text: 'Directions'
-    });
-
-    $place.append($directions);
-    var $delete = $('<a></a>', {
-      href: '#',
-      text: 'Delete',
-      class: 'delete',
-      'data-role': 'delete'
-    });
-    $place.append($delete);
-    $myPlacesContainer.append($place);
-  }
-  $myPlacesDisplay.append($myPlacesContainer);
 }
 ```
 
 </br>
 
 <h2>Live Demo</h2>
-https://www.youtube.com/watch?v=LRKIs7j-9Ew
+
 </br>
 
 <h2>Screenshots:</h2>
-<img src="resources/images/landingpage.png" alt="Landing Page with star filled night">
-<h4>Highlights the landing page of myPhotoAtlas</h4>
+<img src="images/homepage.png" >
+<h4>Highlights the landing page and search feature of Book•Smart</h4>
 <br />
-<img src="resources/images/searchresult.png" alt="displaying search result of NYC and pictures">
-<h4>Photo result after Searching New York City</h4>
+<img src="images/modal.png" >
+<h4>Modal displayed after selecting a title</h4>
 <br />
-<img src="resources/images/myPages.png" alt="myPages screenshot">
-<h4>Displays how myPlaces is layed out</h4>
+<img src="images/current.png">
+<h4>Displays current bestsellers.</h4>
 <br />
-<img src="resources/images/About.png" alt="About Landing Page">
-<h4>Showcases our About section and the methods we used in creating myPhotoAtlas</h4>
+<img src="images/About.png">
+<h4>Showcases our About section.</h4>
+<br />
+<img src="images/faq.png">
+<h4>Showcases our FAQ section.</h4>
+<br />
