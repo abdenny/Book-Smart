@@ -235,7 +235,6 @@ time {
 .search-bar-container {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
   margin-bottom: 10px;
 }
 .search-input {

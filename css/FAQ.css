@@ -95,3 +95,9 @@
     color: rgb(55, 53, 53);
     cursor: default;
   }
+  .description{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    cursor: default;
+}
