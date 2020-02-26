@@ -235,7 +235,7 @@ time {
 .search-bar-container {
   display: flex;
   justify-content: center;
-  margin: 50px;
+  margin-bottom: 10px;
 }
 .search-input {
   width: 600px;
@@ -259,4 +259,9 @@ time {
   background-color: #ee4608;
   border-color: #ee4608;
   border-width: 2px;
+}
+
+h5{
+  margin-bottom: 50px;
+  color: rgb(128, 128, 128);
 }
