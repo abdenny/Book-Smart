@@ -181,9 +181,9 @@ function callNYTimes() {
 <h4>This bit of code is very similar to the last, but shows how we adapted <em>The New York Times</em> call for dates specified by the user.</h4>
 
 ```javascript
-//Function takes the date input the user as an argument.
+//The function takes the date input by the user as an argument.
 function callNYTimes(dateToCheck) {
-  // The date passed in is used to fetch a specific bestsellers.
+  // The date passed in is then used to fetch a specific bestsellers.
   fetch(
     `https://api.nytimes.com/svc/books/v3/lists/${dateToCheck}/hardcover-fiction.json?api-key=` +
       nyTimesKey,
