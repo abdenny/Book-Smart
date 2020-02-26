@@ -238,7 +238,7 @@ https://www.youtube.com/watch?v=tzjPDPcbg8s&feature=youtu.be
 <img src="images/specific.png">
 <h4>Displays searched for bestsellers list.</h4>
 <br />
-<img src="images/About.png">
+<img src="images/about.png">
 <h4>Showcases our About section.</h4>
 <br />
 <img src="images/faq.png">
