@@ -109,6 +109,14 @@ h1 {
 }
 .card--link {
   text-decoration: none;
+  background: #3498db;
+  color: #fff;
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  margin-bottom: 0.5rem;
+}
+.card--link:hover {
+  text-decoration: none;
   background: #db4938;
   color: #fff;
   padding: 0.3rem 1rem;

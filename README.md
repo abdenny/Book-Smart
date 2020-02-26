@@ -15,14 +15,16 @@
 <b>Contributions:</b> JavaScript for all pages, which entailed designing and manipulating HTML & CSS as necessary. Implemented our stretch goal of allowing users to search for bestseller data on specific dates and displaying those on the specificbook page. Developed JavaScript functions to efficiently obtain information from three different APIs, which involved passing information retrieved from one API to another.
 
 <h3>Jaye Jensen: https://github.com/jaye-j</h3>
-<b>Primary team role:</b> Front-end markup and styling, prototype/concepting, Graphic Designer
+<b>Primary team role:</b> Front-end formatting and styling, Graphic Designer, Scrum/Agile, prototype/concepting,
 </br>
+
 <b>Contributions:</b>  HTML and CSS for all pages. Implemented JavaScript necessary for animations on the home, current bestsellers, and find bestsellers pages. Designed logos, the color scheme, and ensured consistent design throughout the website. Executed our stretch goals of having an 'About us' and 'FAQ' page.
 
 <h3>Meryem Komur: https://github.com/meryemkmr</h3>
 <b>Primary team role:</b> Front-end markup and styling, prototype/concepting
 </br>
 <b>Contributions:</b> Main focus was HTML, CSS, and Design. Designed a more traditional desktop version that implements jQuery and Bootstrap4. Deployed responsive design while collaborating with team as well as consistent design throughout all desktop pages, navigation, and footers.
+
 
 </br>
 </br>
@@ -36,9 +38,9 @@
 
 <h3>APIs</h3>
 <ul>
-    <li><em>The New York Times</em> Best Sellers API</li>
-    <li>Google Books API</li>
-    <li>Open Library Books API</li>
+    <li><em>The New York Times</em> Best Sellers API - https://developer.nytimes.com/docs/books-product/1/overview</li>
+    <li>Google Books API - https://developers.google.com/books</li>
+    <li>Open Library Books API - https://openlibrary.org/dev/docs/api/books</li>
 </ul
 
 <h3>Other:</h3>
