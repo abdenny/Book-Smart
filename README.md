@@ -24,7 +24,6 @@
 </br>
 <b>Contributions:</b> HTML and CSS for all pages. Implemented JavaScript neccasary for animations on the home, current bestsellers, and find bestsellers pages. Designed logos, the color scheme, and ensured consistent design throughout the website. Executed our stretch goals of having an 'About us' and 'FAQ' page.
 
-
 </br>
 </br>
 <h2><u>What we used:</u></h3>
